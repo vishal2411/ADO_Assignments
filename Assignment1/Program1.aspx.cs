@@ -27,7 +27,6 @@ namespace ADO__Assignment1
 
                     conn.Open();
 
-
                     SqlCommand cmd = new SqlCommand("Select * from FootballLeague where MatchStatus = 'Win'", conn);
                     SqlDataReader datareader = cmd.ExecuteReader();
 
@@ -42,7 +41,6 @@ namespace ADO__Assignment1
                 {
 
                     conn.Open();
-
 
                     SqlCommand cmd = new SqlCommand("Select * from FootballLeague where TeamName1 = 'Japan' or TeamName2 = 'Japan'", conn);
                     SqlDataReader datareader = cmd.ExecuteReader();
